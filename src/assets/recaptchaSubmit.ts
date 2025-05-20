@@ -1,4 +1,17 @@
 // utils/recaptchaSubmit.ts
+
+import ReCAPTCHA from "react-google-recaptcha";
+
+interface RecaptchaSubmitParams {
+  recaptchaRef: React.RefObject<ReCAPTCHA>;
+  payload: Record<string, any>;
+  endpoint?: string;
+  onSuccess?: (data: any) => void;
+  onError?: (error: any) => void;
+  isArabic: boolean;
+  setLoading: (loading: boolean) => void;
+}
+
 export const handleRecaptchaAndSubmit = async ({
   recaptchaRef,
   payload,
@@ -7,7 +20,7 @@ export const handleRecaptchaAndSubmit = async ({
   onError,
   isArabic,
   setLoading,
-}) => {
+}: RecaptchaSubmitParams): Promise<void> => {
   setLoading(true);
 
   try {
