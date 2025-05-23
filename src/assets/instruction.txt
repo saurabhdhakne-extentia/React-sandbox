@@ -1,0 +1,19 @@
+ARCHIVING - PLEASE NOTE WHEN SELECTING GOALS TO ARCHIVE, ANY GOALS WITH A "GLOBAL GOAL" CATEGORY SHOULD BE ARCHIVED SEPARATELY AND NOT WITH OTHER GOALS. 
+
+Your goals will be your priority focus areas; they need to be stretching and measurable and may need to be flexed throughout the year. Please be sure that you align your goals to those of your team and the wider business to be at the forefront of people-centered transformations that shape society. Your goals should reflect your on-going conversations with your people leader about your career, development and performance. 
+
+Goal = Use this field to add a Goal Title. This should express the overall aim or outcome that needs to be achieved in the area of the business you work. Ideally, you should have no more than 5 goals overall.
+
+Goal Narrative = Use this field to outline your plan to achieve your goal. 
+
+Category = Tick a category for this goal (you can select more than one category per goal). Click here to see the definition of each Goal Category
+
+Status = Tick a status from the drop down list for this goal.
+
+Due Date/Completion Date = This field is mandatory. Enter the completion date for this goal. Depending on the goal, this may be next year.
+
+Milestone = Milestones can be used for project planning and could inform when a conversation about your goal should take place with your people leader to keep track of progress and ensure it remains relevant. Enter key tasks /meetings /events and their due dates to help track progress towards achieving your goal.
+
+Top Tip: Under the ‘Activity’ section, you can use the text box to tag your People Leader and/or HR Partner and type out a message you would like to send to them. They can view your goals and use this feature in the same way. This is a great way to follow up on actions to goals following conversations. The individual tagged will receive a Workday notification about the message you tagged them in and they will be able to view and respond back as needed.
+
+For guidance on how to set great goals click here 
