@@ -1,0 +1,37 @@
+g1: Strengthen Multi-Cloud Deployment and Infrastructure Management Skills (AWS, GCP, Azure)
+g1-desc: "Develop advanced expertise in deploying and managing infrastructure across leading cloud platforms-Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. This will enable the team to leverage the strengths of each provider, optimize for cost, performance, and security, and support business requirements for flexibility and scalability.
+Checkpoint Overview:
+
+Assess current cloud deployment processes and identify areas for improvement across AWS, GCP, and Azure. Outline a multi-cloud deployment strategy based on business needs and platform strengths.
+
+Execute a pilot deployment on each cloud platform (AWS, GCP, Azure), documenting the development journey, including encountered challenges such as integration issues, security configurations, and cost management strategies.
+
+Optimize deployments by addressing problems faced during the pilot phase. Create detailed documentation of the solutions, best practices, and platform-specific considerations for infrastructure management and security.
+
+Finalize and standardize deployment workflows for all three cloud platforms. Prepare a comprehensive document comparing performance, cost, and security outcomes.
+
+Share the development journey and key learnings by writing a blog post or internal whitepaper, highlighting practical insights, resolved challenges, and recommendations for future multi-cloud projects."
+
+g2: Gain Expertise in Generative AI and Build a Prototype Solution
+g2-desc: "Develop practical skills in Generative AI to innovate and automate key business processes. Build and demonstrate a prototype AI-driven solution that addresses a relevant business challenge or opportunity.
+Checkpoint Overview:
+
+Identify a business problem suitable for a Generative AI solution.
+
+Develop a working prototype using Generative AI techniques.
+
+Validate the prototype with Manager and Generative AI team.
+
+Write and publish a blog post or internal/external paper detailing the entire journey-from concept through challenges to final solution-including key insights and recommendations for future Generative AI projects"
+
+g3: Master Django for Web Application Development
+g3-desc: "Enhance my backend development skills by completing a comprehensive Django course and applying the knowledge to develop a functional web application for internal use. This will improve our team’s capability to deliver robust web solutions and support digital transformation initiatives.
+Checkpoint Overview:
+
+Define project scope and learning objectives for Django application development.
+
+Complete development of a prototype web application using Django.
+
+Test and refine the application based on feedback.
+
+Present the application and share best practices with the team."
