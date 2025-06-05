@@ -1,1 +1,67 @@
 
+import { useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+
+const carouselData = [
+  {
+    title: 'Location One',
+    desc: 'Explore the rich history and vibrant culture of Location One.',
+    pointerPos: { top: '20%', left: '30%' },
+  },
+  {
+    title: 'Location Two',
+    desc: 'Breathtaking landscapes await at this scenic destination.',
+    pointerPos: { top: '40%', left: '60%' },
+  },
+  {
+    title: 'Location Three',
+    desc: 'A city of innovation and creativity, full of surprises.',
+    pointerPos: { top: '70%', left: '40%' },
+  },
+  {
+    title: 'Location Four',
+    desc: 'Discover culinary delights and charming architecture.',
+    pointerPos: { top: '50%', left: '20%' },
+  },
+  {
+    title: 'Location Five',
+    desc: 'Serenity and nature blend perfectly in this location.',
+    pointerPos: { top: '30%', left: '75%' },
+  },
+];
+
+export default function MapCarousel() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const goLeft = () =>
+    setActiveIndex((prev) => (prev === 0 ? carouselData.length - 1 : prev - 1));
+  const goRight = () =>
+    setActiveIndex((prev) => (prev === carouselData.length - 1 ? 0 : prev + 1));
+
+  return (
+    <div className="relative w-full h-[900px] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=2100&q=80')" }}>
+      {/* Pointers */}
+      {carouselData.map((item, i) => (
+        <div
+          key={i}
+          className={`absolute w-6 h-6 rounded-full transition-all duration-300 ${i === activeIndex ? 'shadow-[0_0_20px_10px_rgba(255,255,255,0.9)]' : ''} bg-white`}
+          style={{ top: item.pointerPos.top, left: item.pointerPos.left, transform: 'translate(-50%, -50%)' }}
+        />
+      ))}
+
+      {/* Bottom Left Box */}
+      <div className="absolute bottom-10 left-10 bg-white bg-opacity-80 p-6 rounded-xl shadow-lg max-w-md">
+        <div className="flex justify-between items-center mb-4">
+          <button onClick={goLeft} className="text-xl text-gray-600 hover:text-black">
+            <FaArrowLeft />
+          </button>
+          <h2 className="text-xl font-semibold text-center flex-1">{carouselData[activeIndex].title}</h2>
+          <button onClick={goRight} className="text-xl text-gray-600 hover:text-black">
+            <FaArrowRight />
+          </button>
+        </div>
+        <p className="text-sm text-gray-700">{carouselData[activeIndex].desc}</p>
+      </div>
+    </div>
+  );
+}
