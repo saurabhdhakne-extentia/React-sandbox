@@ -35,12 +35,20 @@ const OurConstellationSection: React.FC<OurConstellationSectionProps> = ({ lang 
 }, [lang]);
 
   const animateToSlide = (nextSlide: number) => {
-     if (locations.length === 0) return;
+    if (locations.length === 0) return;
+    if(!slidesRef.current[nextSlide] || !slidesRef.current[currentSlide]){
+      console.log("Slides not ready. Skipping the animation")
+      return
+    }
     const currentEl = slidesRef.current[currentSlide];
     const nextEl = slidesRef.current[nextSlide];
-    if (!currentEl || !nextEl) return;
-
+    console.log(nextEl)
+    console.log(currentEl)
+    // if (!currentEl || !nextEl) return;
+    
     const isForward = nextSlide > currentSlide;
+    console.log("isForward")
+    console.log(isForward)
 
     if (isForward) {
 
@@ -103,10 +111,13 @@ const OurConstellationSection: React.FC<OurConstellationSectionProps> = ({ lang 
 
   const go = (direction: 'prev' | 'next') => {
     console.log(direction)
-    console.log(locations)
+    console.log(locations.length)
+    console.log(currentSlide)
     if (direction === 'next' && currentSlide < locations.length - 1) {
+      console.log("calling next")
       animateToSlide(currentSlide + 1);
     } else if (direction === 'prev' && currentSlide > 0) {
+      console.log("calling prev")
       animateToSlide(currentSlide - 1);
     }
   };
@@ -138,6 +149,7 @@ const OurConstellationSection: React.FC<OurConstellationSectionProps> = ({ lang 
       </div>
       <div className="row">
         <SlidingAnimation
+          key={lang+locations.length}
           slidesRef={slidesRef}
           slides={locations}
         />
