@@ -58,7 +58,7 @@ const SlidingAnimation: React.FC<SlidingAnimationProps> = ({
           key={index}
           ref={el => { slidesRef.current[index] = el; }}
           className={styles.slide}
-          style={{ backgroundImage: `url(${bgImages[index]})` }}
+          style={{ backgroundImage: `url(${text.image || 'images/OurConstellationSection/2814.jpg' })` }}
         >
           <span className={styles.slideText}>
             {/* {text} */}
