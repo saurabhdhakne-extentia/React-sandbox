@@ -6,7 +6,7 @@ function App() {
   return (
     <>
         <h1>Our Components</h1>
-        <h2>Hello </h2>
+        <h2>Hello World</h2>
         <AudioVisualizerParent/>
     </>
   )
